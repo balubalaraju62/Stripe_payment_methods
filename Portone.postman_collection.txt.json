@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "f8552189-d6e1-4d5e-bc73-ae008e800d22",
+		"name": "Portone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26757038",
+		"_collection_link": "https://galactic-firefly-783435.postman.co/workspace/balaraju-usecase1-API~91627e72-a7de-4739-8307-6562473c4c1e/collection/26757038-f8552189-d6e1-4d5e-bc73-ae008e800d22?action=share&source=collection_link&creator=26757038"
+	},
+	"item": [
+		{
+			"name": "get  method",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\": 1000, \r\n    \"currency\": \"usd\", \r\n    \"payment_method\": \"pm_card_visa\", \r\n    \"confirm\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8080/api/v1/create_intent"
+			},
+			"response": []
+		},
+		{
+			"name": "Post method",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\": 1, \r\n    \"currency\": \"usd\", \r\n    \"payment_method\": \"pm_card_visa\", \r\n    \"confirm\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8080/api/v1/create_intent"
+			},
+			"response": []
+		}
+	]
+}
